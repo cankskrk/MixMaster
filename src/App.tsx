@@ -6,6 +6,7 @@ import {
   Error,
   Landing,
   Newsletter,
+  SinglePageError,
 } from "./pages";
 import "./App.css";
 import { loader as landingLoader } from "./pages/Landing";
@@ -42,6 +43,7 @@ const App = () => {
         {
           index: true,
           element: <Landing />,
+          errorElement: <SinglePageError />,
           loader: landingLoader,
         },
         {
