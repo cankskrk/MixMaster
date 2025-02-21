@@ -8,6 +8,7 @@ import {
   Newsletter,
 } from "./pages";
 import "./App.css";
+import { loader as landingLoader } from "./pages/Landing";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -39,8 +40,9 @@ const App = () => {
           element: <Newsletter />,
         },
         {
-          path: "/landing",
+          index: true,
           element: <Landing />,
+          loader: landingLoader,
         },
         {
           path: "/error",

@@ -9,7 +9,9 @@ const Navbar = () => {
       </div>
       <div>
         {NavLinkRoutes.map((route) => (
-          <NavLink to={route.path}>{route.name}</NavLink>
+          <NavLink key={route.name} to={route.path}>
+            {route.name}
+          </NavLink>
         ))}
       </div>
     </nav>
