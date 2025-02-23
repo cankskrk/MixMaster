@@ -11,3 +11,19 @@ export interface RouteError {
   status: number;
   statusText: string;
 }
+
+export interface Drink {
+  idDrink: string;
+  strDrink: string;
+  strDrinkThumb: string;
+  strAlcoholic: string;
+  strGlass: string;
+}
+
+export interface CocktailCardType {
+  image: string;
+  name: string;
+  id: string;
+  info: string;
+  glass: string;
+}
