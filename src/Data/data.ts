@@ -1,4 +1,4 @@
-import { NavLinkRoutesType } from "./type";
+import { NavLinkRoutesType } from "./types";
 
 export const NavLinkRoutes: NavLinkRoutesType[] = [
   { name: "Home", path: "/" },
